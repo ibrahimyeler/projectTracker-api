@@ -29,11 +29,7 @@ print_error() {
     echo -e "${RED}[ERROR]${NC} $1"
 }
 
-# Check if running as root
-if [[ $EUID -eq 0 ]]; then
-   print_error "This script should not be run as root"
-   exit 1
-fi
+# Root kontrolü kaldırıldı
 
 # Update system
 print_status "Updating system packages..."
