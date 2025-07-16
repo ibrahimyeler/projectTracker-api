@@ -24,7 +24,7 @@ FastAPI tabanlı proje takip sistemi API'si.
 ### 1. Repository'yi Klonlayın
 
 ```bash
-git clone https://github.com/your-username/project-tracker-api.git
+git clone https://github.com/ibrahimyeler/projectTracker-api.git
 cd project-tracker-api
 ```
 
@@ -83,7 +83,7 @@ uvicorn main:app --reload
 ```bash
 # Script'i düzenleyin
 nano deploy.sh
-# GITHUB_REPO değişkenini güncelleyin (DOMAIN zaten ayarlı)
+# GITHUB_REPO değişkenini güncelleyin (DOMAIN ve GITHUB_REPO zaten ayarlı)
 
 # Deployment'ı başlatın
 ./deploy.sh

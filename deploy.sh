@@ -8,7 +8,7 @@ echo "🚀 Starting deployment..."
 # Variables
 PROJECT_NAME="project-tracker-api"
 DOMAIN="api.projecttracker.ibrahimyeler.com"
-GITHUB_REPO="your-username/project-tracker-api"
+GITHUB_REPO="ibrahimyeler/projectTracker-api"
 
 # Colors for output
 RED='\033[0;31m'
