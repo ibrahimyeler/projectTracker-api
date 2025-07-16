@@ -7,7 +7,7 @@ echo "🚀 Starting deployment..."
 
 # Variables
 PROJECT_NAME="project-tracker-api"
-DOMAIN="yourdomain.com"
+DOMAIN="api.projecttracker.ibrahimyeler.com"
 GITHUB_REPO="your-username/project-tracker-api"
 
 # Colors for output
@@ -101,7 +101,7 @@ sudo systemctl start project-tracker
 
 # Setup SSL certificate
 print_status "Setting up SSL certificate..."
-sudo certbot --nginx -d $DOMAIN -d www.$DOMAIN --non-interactive --agree-tos --email your-email@example.com
+sudo certbot --nginx -d $DOMAIN --non-interactive --agree-tos --email your-email@example.com
 
 # Final checks
 print_status "Performing final checks..."
@@ -125,6 +125,7 @@ print_status "🎉 Deployment completed successfully!"
 print_status "Your API is now available at: https://$DOMAIN"
 print_status "API Documentation: https://$DOMAIN/docs"
 print_status "Health Check: https://$DOMAIN/health"
+print_status "Swagger UI: https://$DOMAIN/docs"
 
 echo ""
 print_warning "Don't forget to:"

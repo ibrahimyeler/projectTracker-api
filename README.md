@@ -74,16 +74,16 @@ uvicorn main:app --reload
 
 ### Otomatik Deployment
 
-1. **Domain'inizi hazırlayın**
+1. **Domain hazırlığı**
    - DNS kayıtlarınızı sunucunuzun IP'sine yönlendirin
-   - `nginx.conf` dosyasındaki domain adını güncelleyin
+   - Domain: `api.projecttracker.ibrahimyeler.com`
 
 2. **Deployment script'ini çalıştırın**
 
 ```bash
 # Script'i düzenleyin
 nano deploy.sh
-# DOMAIN ve GITHUB_REPO değişkenlerini güncelleyin
+# GITHUB_REPO değişkenini güncelleyin (DOMAIN zaten ayarlı)
 
 # Deployment'ı başlatın
 ./deploy.sh
@@ -136,7 +136,7 @@ sudo systemctl start project-tracker
 
 7. **SSL sertifikası alın**
 ```bash
-sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+sudo certbot --nginx -d api.projecttracker.ibrahimyeler.com
 ```
 
 ## 📚 API Dokümantasyonu
